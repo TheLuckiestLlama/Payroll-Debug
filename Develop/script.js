@@ -9,6 +9,7 @@ collectEmployees = function() {
   let UserFirst = prompt("Please enter your first name.");
   let UserLast = prompt("Please enter your last name.");
   let UserSalary = prompt("Please enter your salary.");
+  parseInt(UserSalary);
   UserObject.firstName = UserFirst;
   UserObject.lastName = UserLast;
   UserObject.payRate = UserSalary;
@@ -24,10 +25,12 @@ const displayAverageSalary = function(employeesArray) {
   let totalSalary = 0;
   let employeeCount = employeesArray.length;
   // TODO: Calculate and display the average salary
-  for (let headCount = 0; headCount < employeesArray.length; headCount++){
-    totalSalary += employeesArray[headCount];
+  for (let i = 0; i < employeesArray.length; i++){
+    totalSalary += employeesArray.UserObject.payRate[i];
+    console.log(totalSalary);
   }
-  console.log(totalSalary);
+  let averageSalary = totalSalary / employeeCount;
+  console.log(averageSalary);
 }
 
 let randomEmployee = ("How do we not have any employees?");
