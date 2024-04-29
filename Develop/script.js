@@ -26,10 +26,10 @@ const displayAverageSalary = function(employeesArray) {
   let employeeCount = employeesArray.length;
   // TODO: Calculate and display the average salary
   for (let i = 0; i < employeesArray.length; i++){
-    totalSalary += employeesArray.UserObject.payRate[i];
+    totalSalary += Number(employeesArray[i].payRate);
     console.log(totalSalary);
   }
-  let averageSalary = totalSalary / employeeCount;
+  let averageSalary = Number(totalSalary) / Number(employeeCount);
   console.log(averageSalary);
 }
 
