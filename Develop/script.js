@@ -33,10 +33,13 @@ const displayAverageSalary = function(employeesArray) {
   console.log(averageSalary);
 }
 
-let randomEmployee = ("How do we not have any employees?");
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+  let x = Math.floor(Math.random() * employeesArray.length);
+  const RandomEmployeeFirst = employeesArray[x].firstName;
+  const RandomEmployeeLast = employeesArray[x].lastName;
+  console.log("Congratulations on winning the free salad coupon " + RandomEmployeeFirst + RandomEmployeeLast);
 }
 /*
   ====================
