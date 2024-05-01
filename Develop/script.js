@@ -1,5 +1,6 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
+const employeeTable = document.querySelector(`#employee-table`)
 
 // Collect employee data
 const employeesArray = [];
